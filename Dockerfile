@@ -25,6 +25,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Install the required Python packages
 RUN pip3 install essentia-tensorflow
 RUN pip3 install fastapi uvicorn requests python-multipart
+RUN pip install numpy==1.26.4
 
 # Create a working directory
 WORKDIR /app
